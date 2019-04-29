@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+</head>
+
+<body>
+    <header align="center">
+        <h>Creacion de nuevos usuarios</h>
+    </header>
+<section>
+        <form align="left" action="../controladoresphp/crear_usuario.php" method="POST">
+            <label id="cedula">Cedula (*):</label>
+            <input name="custCedula" id="cedula" type="text" placeholder="Ingrese el número de cedula ..." required/><br><br>
+            
+            <label for="nombres">Nombre (*):</label>
+            <input name="custNombres" id="nombres" type="text" placeholder="Ingrese sus dos nombres ..." required/><br><br>
+            
+            <label for="apellidos">Apellido:</label>
+            <input name="custApellidos" id="apellidos" type="text" placeholder="Ingrese sus dos apellidos ..." required/><br><br>
+            
+            <label for="direccion">Direccion:</label>
+            <input name="custDireccion" id="direccion" type="text" placeholder="Ingrese su dirección ..." required/><br><br>
+            
+            <label for="telefono">Telefono:</label>
+            <input name="custTelefono" id="telefono" type="text" placeholder="Ingrese su número telefónico ..." required/><br><br>
+    
+            <label for="fecha_nacimiento">Fecha De Nacimiento:</label>
+            <input name="custFechaNacimiento" id="fecha_nacimiento" type="date" placeholder="Ingrese su fecha de nacimiento ..." required/><br><br>
+    
+            <br>
+            <br>
+            <input class="btn" type="submit" value="Crear">&nbsp;
+            <input class="btn" type="reset" value="Cancelar">
+        </form>
+</section>
+    <form align="right" action="../controladoresphp/crear_usuario.php" method="POST">
+        
+        <label for="correo">Email:</label>
+        <input name="custCorreo" id="correo" type="email" placeholder="Ingrese su correo electrónico ..." required/><br><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input name="custContrasena" id="contrasena" type="password" placeholder="Ingrese su contraseña ..." required/><br><br>
+
+        <br>
+        <br>
+        <input class="btn" type="submit" value="Crear">&nbsp;
+        <input class="btn" type="reset" value="Cancelar">
+    </form>
+
+</body>
+
+</html>
