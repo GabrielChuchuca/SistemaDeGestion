@@ -7,7 +7,9 @@
 </head>
 
 <body>
-    <table style="width:100%">
+<p align="center">Listado de Usuario</p>
+<a href="" align="left" >Cerrar Sesion</a>
+    <table style="width:100%" border="1">
         <tr>
             <th>Cedula</th>
             <th>Nombres</th>
@@ -16,6 +18,10 @@
             <th>Telefono</th>
             <th>Correo</th>
             <th>Fecha Nacimiento</th>
+            <th>Eliminar</th>
+            <th>Actualizar</th>
+            <th>Camibiar Contraseña</th>
+
         </tr>
         <?php
         include '../../../config/conexionBD.php';
@@ -31,8 +37,12 @@
                 echo " <td>" . $row['usu_telefono'] . "</td>";
                 echo " <td>" . $row['usu_correo'] . "</td>";
                 echo " <td>" . $row['usu_fecha_nacimiento'] . "</td>";
+                echo "<td><a href='#'>Enlace</a></td>";
+                echo "<td><a href='#'>Enlace</a></td>";
+                echo "<td><a href='#'>Enlace</a></td>";
                 echo "</tr>";
             }
+            
         } else {
             echo "<tr>";
             echo " <td colspan='7'> No existen usuarios registradas en el sistema </td>";

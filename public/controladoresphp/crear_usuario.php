@@ -36,7 +36,7 @@
         }
     }
     $conn->close();
-    echo "<a href='../vista/crear_usuario.html'>Regresar</a>";
+    echo "<a href='../vistahtml/crear_usuario.html'>Regresar</a>";
     ?>
 </body>
 
